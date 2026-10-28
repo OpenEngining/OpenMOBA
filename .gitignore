@@ -1,0 +1,8 @@
+/target
+/.devenv
+/.devenv.flake.nix
+/web/pkg
+/web/assets
+/.cache
+/cache
+/data

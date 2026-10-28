@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenMOBA</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <div id="ui"></div>
+    <script type="module">
+      import init, { start } from "./pkg/game.js";
+
+      await init();
+      await start(document.getElementById("game"), document.getElementById("ui"));
+    </script>
+  </body>
+</html>
